@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - docker build -t 394/wekan-adapter .
+    - docker image prune -f
+  tags:
+    - builder
+  only:
+    - master

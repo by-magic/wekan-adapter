@@ -1,0 +1,12 @@
+# Envs
+.env
+.env.shared
+.env.test
+
+# Logs
+*.log
+
+# Python
+venv
+__pycache__/
+.venv
